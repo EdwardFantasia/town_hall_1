@@ -9,11 +9,23 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
 }
+
+section{
+	width: 525px;
+	float: right;
+	padding: 0px 20px 20px, 20px;
+}
+
+aside{
+	width: 215px;
+	float: right;
+}
+
 a:focus, a:hover {
 	font-style: italic;
 }
@@ -47,17 +59,9 @@ header img {
 }
 /* the styles for the main content */
 main {
-	clear: left;
+	padding: 0px 0px 20px 20px;
 }
-main {
-	padding: 0 30px;
-}
-main h1 {
-	font-size: 150%;
-	padding: .3em 0;
-    border-top: 3px solid #931420;
-    border-bottom: 3px solid #931420;
-}
+
 main h2 {
 	color: #800000;
 	font-size: 130%;
@@ -98,18 +102,29 @@ article h3 {
 	padding-bottom: .25em;
 }
 
-/* the styles for the aside */
+article img{
+	float: right;
+	border: 1px solid black;
+	padding-bottom: 0;
+	margin: 1em;
+}
 
+/* the styles for the aside */
 aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-aside img {
-	padding-bottom: 1em;
+
+aside h1{
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin: 0;
 }
 
 /* the styles for the footer */
 footer {
+	clear: both;
 	background-color: #931420;
 }
 footer p {
