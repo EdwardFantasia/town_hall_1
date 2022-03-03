@@ -50,6 +50,72 @@ main {
 	clear: left;
 }
 
+/* Nav Menu */
+#nav_menu{
+	position: relative;
+}
+
+#nav_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_menu li{
+	float: left;
+}
+
+#nav_menu a{
+	display: block;
+	width: 160px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+
+}
+
+#nav_menu a.current{
+}
+
+#nav_menu ul li{
+    float: left;
+    width: 20%;
+}
+
+#nav_menu ul li a{
+    display: block;
+    text-align: center;
+    padding: .7em 0;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#nav_menu ul ul li{
+    float: none;
+}
+
+#nav_menu ul li:hover > ul{
+    display: block;
+}
+
+#nav_menu > ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
 /* the styles for the section */
 section {
 	width: 525px;
