@@ -9,7 +9,8 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 800px;
+    max-width: 960px;
+	width: 98%;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -40,7 +41,7 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding: 0 3.125%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -54,10 +55,10 @@ header img {
 }
 #nav_menu ul li {
 	float: left;
+	width: 20%;
 }
 #nav_menu ul li a {
     display: block;
-    width: 160px;
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -85,11 +86,15 @@ header img {
     display: block;
 }
 
+#nav_list{
+	width: 100%
+}
+
 /* the styles for the section */
 section {
-	width: 525px;
+	width: 54.69%;
 	float: right;
-	padding: 0 20px 20px 20px;
+	padding: 0 2.08% 2.08% 2.08%;
 }
 section h1 {
 	font-size: 150%;
@@ -133,13 +138,15 @@ article img {
 	float: right;
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
+	max-width: 40%;
+	min-width: 150px;
 }
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	width: 35%;
 	float: right;
-	padding: 0 0 20px 20px;
+	padding: 0 0 20px 2.08%;
 }
 aside h2 {
 	color: #800000;
@@ -166,3 +173,77 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+
+#mobilemenu{
+	display: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 409px) {
+    aside h2 a{
+		font-size: 85%;
+	}
+
+	section h1{
+		font-size: 125%;
+	}
+
+	section h2{
+		font-size: 110%;
+	}
+
+	aside h2{
+		font-size: 110%;
+	}
+  }
+
+  @media only screen and (max-width: 371px) {
+    aside h2{
+		font-size: 80%;
+	}
+
+	aside h3{
+		font-size: 70%;
+	}
+
+	aside{
+		clear: both;
+		padding-right: 20%;
+	}
+
+	section{
+		clear: both;
+	}
+
+	div{
+		columns: 2;
+		margin: auto;
+	}
+
+	main{
+		text-align: center;
+		
+	}
+
+	section, aside{
+		padding-left: 0;
+		padding-right: 20%;
+	}
+
+	#nav_menu{
+		display: none;
+	}
+
+	div{
+		column-count: 2;
+		column-gap: 40px;
+	}
+
+	#mobilemenu{
+		display: block;
+	}
+
+	.slicknav_menu{
+		background-color: #800000 !important;
+	}
+  }
